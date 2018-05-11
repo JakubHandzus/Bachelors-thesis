@@ -5,12 +5,12 @@ Monitoring of Temperature for Small Buildings
   <img src="screens/home.png">
 </p>
 
-#### Abstract
-The aim of this thesis is to design and implement an IoT system for monitoring the air temperature of smaller objects, e.g households. As the system is to be financially available to the wider public, it needs to be fully functional even at low procurement and operating costs\,--\,based on this requirement, it is necessary to analyze available alternatives for operating the systems. When selecting the appropriate technology for storing the acquired data, it is necessary to take into account the operations most frequently performed on the data\,--\,for this reason, a set of experiments is carried out on several types of database systems. Based on the findings gathered during analysis and experimentation, the optimal solution appears to be the combination of a generic database with web host services. In the resulting system, the sensor sends the acquired data to the server with a database, whilst the processed data is subsequently interpreted by the client-side visualizations.
+### Abstract
+The aim of this thesis is to design and implement an IoT system for monitoring the air temperature of smaller objects, e.g households. As the system is to be financially available to the wider public, it needs to be fully functional even at low procurement and operating costs - based on this requirement, it is necessary to analyze available alternatives for operating the systems. When selecting the appropriate technology for storing the acquired data, it is necessary to take into account the operations most frequently performed on the data - for this reason, a set of experiments is carried out on several types of database systems. Based on the findings gathered during analysis and experimentation, the optimal solution appears to be the combination of a generic database with web host services. In the resulting system, the sensor sends the acquired data to the server with a database, whilst the processed data is subsequently interpreted by the client-side visualizations.
 
 Installation
 ------------
-#### Server
+### Server
 
 Requirements:
 * MariaDB
@@ -43,7 +43,7 @@ $ php artisan serve
 
 In sql folder is SQL script for creating SQL tables (in case of webhostings).
 
-#### Sensor
+### Sensor
 
 Requirements:
 * Arduino IDE with ESP8266 library
