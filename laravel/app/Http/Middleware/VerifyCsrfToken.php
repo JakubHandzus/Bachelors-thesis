@@ -13,7 +13,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'temperature/post',
-        'sensor/identificate',
-        'temperature/dev_post'
+        'sensor/identificate'
     ];
 }
