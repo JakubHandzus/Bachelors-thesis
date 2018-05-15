@@ -13,7 +13,7 @@ Installation
 ### Server
 
 Requirements:
-* MariaDB
+* MariaDB database (MySQL optional)
 * Apache 2
 * PHP >= 7.0.0
 * OpenSSL PHP Extension
@@ -29,19 +29,24 @@ Setup steps:
 # 1. move laravel folder to /var/www/html/laravel and change directory
 $ mv laravel /var/www/html/laravel
 $ cd /var/www/html/laravel
+
 # 2. install dependencies
 $ composer install
+
 # 3. copy and edit enviroment file - setup credentionals to database and mailserver
 $ cp .env.example .env
+
 # 4. generate key
 $ php artisan key:generate
+
 # 5. generate database tables
 $ php artisan migrate
+
 # 6. run web application
 $ php artisan serve
 ```
 
-In sql folder is SQL script for creating SQL tables (in case of webhostings).
+In sql folder there is SQL script for creating SQL tables (in case of webhostings).
 
 ### Sensor
 
